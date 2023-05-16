@@ -162,6 +162,7 @@ class Sign_up:
     def update_phone_no(self, new_phone_no):
         self.phone_no = new_phone_no
     
+    
     def update_password(self, new_password):
         self.password = new_password
     def update_password_confirmation(self, new_password_confirmation):
