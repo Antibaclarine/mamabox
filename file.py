@@ -144,3 +144,131 @@ i1 = Inventory("Apple", 100,"sh.500", "add")
 
 # //Inventory
 print(i1)
+
+#sigup class 
+class Sign_up:
+    def __init__(self,username,email,phone_no,password,password_confirmation):
+        self.username=username
+        self.email=email
+        self.phone_no=phone_no
+        self.password=password
+        self.password_confirmation=password_confirmation
+    def update_username(self, new_username):
+        self.username = new_username
+    
+    def update_email(self, new_email):
+        self.email = new_email
+    
+    def update_phone_no(self, new_phone_no):
+        self.phone_no = new_phone_no
+    
+    
+    def update_password(self, new_password):
+        self.password = new_password
+    def update_password_confirmation(self, new_password_confirmation):
+        self.password_confirmation = new_password_confirmation
+        
+    def __str__(self):
+       return f"{self.username},{self.email},{self.phone_no},{self.password},{self.password_confirmation} "
+# //login
+class Login:
+    def __init__(self,username,password,email):
+        self.username=username
+        self.password=password
+        self.email=email
+    def input_username(self,new_username):
+        self.username=new_username
+        
+    
+    
+    def input_password(self, new_password):
+        self.password = new_password
+        
+    def update_email(self, new_email):
+        self.email = new_email
+    def __str__(self):
+        return f"{self.username},{self.password},{self.email}"
+    
+    
+            
+        
+    
+
+
+#Order class
+class Order:
+    def __init__(self, products_ordered, quantity, total_price, delivery_address, payment_method, order_status):
+        self.products_ordered = products_ordered
+        self.quantity = quantity
+        self.total_price = total_price
+        self.delivery_address = delivery_address
+        self.payment_method = payment_method
+        self.order_status = order_status
+    
+    def update_order_status(self, new_order_status):
+        self.order_status = new_order_status
+    
+    def __str__(self):
+        return f"{self.products_ordered}, {self.quantity} ,{self.total_price} ,{self.delivery_address},{self.payment_method} ,{self.order_status}"
+
+
+
+    
+class Add_item:
+    def __init__(self,name,quantity,price):
+        self.name=name
+        self.quantity=quantity
+        self.price=price
+    def item_name(self,p_name):
+        self.name=p_name 
+        
+    def item_quantity(self,n_quantity):
+        self.quantity=n_quantity
+    def item_price(self,n_price):
+        self.price=n_price 
+    def __str__(self):
+        return f"{self.name},{self.quantity},{self.price}" 
+      
+    
+    
+            
+
+
+
+#//Order class
+o1 = Order(["Apple", "Orange","banana"], 2, 2.50, "Lintet L", "M-pesa", "Home delivery")
+
+
+
+i1=Add_item("cabagges",45,5000)
+# //Sign_up
+s1=Sign_up("Serah Mburu","wanjirumburu@gmail.com","0733938932","serah1233","serah1233")
+# //Login
+l1=Login("mashrima vee","mash3345","mashrima@gmail.com")
+
+    
+
+
+
+
+
+
+
+
+
+# //Order
+print(o1)
+
+
+
+
+
+
+# //sign up
+print(s1)
+# //login
+print(l1)
+
+# //Add_item
+print(i1)
+
